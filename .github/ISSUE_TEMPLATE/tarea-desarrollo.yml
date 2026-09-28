@@ -1,0 +1,73 @@
+name: Tarea de desarrollo
+description: Crear una nueva tarea de desarrollo, mejora o modificación
+title: "[TAREA] "
+labels: []
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Complete la información necesaria para definir correctamente la tarea.
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: ¿Qué se necesita implementar, modificar o corregir?
+      placeholder: Describe brevemente el resultado esperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: ¿Por qué se necesita este cambio?
+      placeholder: Describe el comportamiento actual o la necesidad detectada.
+    validations:
+      required: false
+
+  - type: textarea
+    id: requerimiento
+    attributes:
+      label: Requerimiento
+      description: Describe concretamente qué debe hacer el sistema.
+      placeholder: Describe el comportamiento esperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Define las condiciones que deben cumplirse para aceptar la tarea.
+      placeholder: |
+        - [ ] El sistema...
+        - [ ] Al realizar...
+        - [ ] Se debe mostrar...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alcance
+    attributes:
+      label: Alcance
+      description: Indica qué está incluido y, cuando sea relevante, qué queda fuera de la tarea.
+      placeholder: |
+        Incluye:
+        -
+
+        No incluye:
+        -
+    validations:
+      required: false
+
+  - type: textarea
+    id: observaciones
+    attributes:
+      label: Observaciones técnicas
+      description: Información técnica útil para realizar la tarea.
+      placeholder: Componentes, archivos, endpoints, restricciones, referencias, etc.
+    validations:
+      required: false
