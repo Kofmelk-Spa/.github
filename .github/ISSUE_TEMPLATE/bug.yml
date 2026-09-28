@@ -1,0 +1,72 @@
+name: Reporte de error
+description: Registrar un error o comportamiento incorrecto del sistema
+title: "[BUG] "
+labels: []
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Registre la información necesaria para identificar y reproducir el problema.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del problema
+      description: ¿Qué está ocurriendo?
+      placeholder: Describe claramente el problema detectado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamiento-esperado
+    attributes:
+      label: Comportamiento esperado
+      description: ¿Qué debería ocurrir?
+      placeholder: Describe el comportamiento correcto esperado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduccion
+    attributes:
+      label: Pasos para reproducir
+      description: Indica cómo reproducir el problema.
+      placeholder: |
+        1. Ingresar a...
+        2. Seleccionar...
+        3. Realizar...
+        4. Se produce...
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Adjunta capturas, videos, logs o mensajes de error cuando estén disponibles.
+      placeholder: Arrastra aquí las capturas o archivos, o pega los logs relevantes.
+    validations:
+      required: false
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Información del entorno donde ocurrió el problema.
+      placeholder: |
+        Sistema/Proyecto:
+        Ambiente:
+        Dispositivo/Equipo:
+        Información adicional:
+    validations:
+      required: false
+
+  - type: textarea
+    id: observaciones
+    attributes:
+      label: Observaciones técnicas
+      description: Información adicional útil para investigar el problema.
+    validations:
+      required: false
